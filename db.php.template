@@ -1,0 +1,9 @@
+<?php
+
+# connect to server
+$link = mysql_connect('127.0.0.1', 'root', '');
+if (!$link) {
+    die('Could not connect: ' . mysql_error());
+}
+# select db
+mysql_select_db('magento');
